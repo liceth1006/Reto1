@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Reto 1</title>
+</head>
+<body>
+  <header>
+
+  </header>
+  <!--formulario-->
+  <section class="flex-container">
+    <div class="container-form">
+      <form id="myForm" class="form" action="">
+      <img src="./assets/img/laptop.png" alt="">
+      <h1>laptop Gamer AMD</h1>
+      <label for="cantidad"></label>
+      <input 
+      class="cantidad"
+      id="cantidad"
+      name="cantidad"
+      placeholder="cantidad"
+      type="number"                    
+      required
+      />
+      <select class="opcion" name="opcion" id="opcion">
+        <option value="0" selected>Color</option>
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+        <option value="rosado">Rosado</option>
+        <option value="rojo">rojo</option>
+      </select>
+      <h2 id="precio">Precio:$ 400.000</h2>
+      <button type="button" id="btnCalcular" class="btn">Calcular Total</button>
+      </form>
+    </div>
+    <!--secciones-->
+    <div class="allCards">
+      <div class="cardAzul" id="cardAzul"></div>
+      <div class="cardVerde" id="cardVerde"></div>
+      <div class="cardRosado" id="cardRosado"></div>
+      <div class="cardRojo" id="cardRojo"></div>
+    </div>
+  </section>
+    <!--template-->
+    <template id="cardResultado" >
+      <div class="card">
+        <h3 class="total"></h3>
+        <h3 class="cantidadResultado"></h3>
+        <h3 class="color"></h3>
+    </div>
+    </template>
+    <template id="cardResultado2" >
+      <div class="card">
+        <h3 class="total"></h3>
+        <h3 class="cantidadResultado"></h3>
+        <h3 class="color"></h3>
+    </div>
+    </template>
+  </template>
+  <template id="cardResultado3" >
+    <div class="card">
+      <h3 class="total"></h3>
+      <h3 class="cantidadResultado"></h3>
+      <h3 class="color"></h3>
+  </div>
+  </template>
+</template>
+<template id="cardResultado4" >
+  <div class="card">
+    <h3 class="total"></h3>
+    <h3 class="cantidadResultado"></h3>
+    <h3 class="color"></h3>
+</div>
+</template>
+
+<script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
